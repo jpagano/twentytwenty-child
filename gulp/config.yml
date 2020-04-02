@@ -1,0 +1,13 @@
+PROXY: "http://twentytwenty-child.local/"
+PORT: 8000
+
+PATHS:
+  dist: "../dist"
+  assets:
+    - "src/**/*"
+    - "!src/{img,js,scss}"
+    - "!src/{img,js,scss}/**/*"
+  sass:
+    - "node_modules/"
+  entries:
+    - "src/js/scripts.js"
